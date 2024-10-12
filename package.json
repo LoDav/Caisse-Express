@@ -1,0 +1,22 @@
+{
+  "name": "caisse_app_electron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build":"electron-packager . caisse_app_bluid --platform=win32 --arch=x64 --overwrite to force" 
+    
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^32.1.2",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "@electron/packager": "^18.3.5"
+  }
+}

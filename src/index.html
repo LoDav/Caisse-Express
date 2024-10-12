@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Trundel_Caisse</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' http://xxxx 'unsafe-inline' 'unsafe-eval';" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./libs/pico.jade.min.css"> -->
+    <link rel="stylesheet" href="../src/libs/light.css">
+    <!-- <link rel="stylesheet" href="../src/libs/water.css"> -->
+
+    <link rel="stylesheet" href="../public/css/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+    <main id="app">
+        <div>
+            <Sidebar @change-menu = "changeMenu"></Sidebar>
+            <div class="content">
+                <component :is="is_seen"></component>
+            </div>
+            
+        </div>
+        
+    </main>
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
